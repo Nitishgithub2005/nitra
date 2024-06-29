@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block title %}Login{% endblock %}
+{% load static %}
+{% block head %}
+    <link rel="stylesheet" href="{% static 'login.css' %}">
+{% endblock %}
+{% block content %}
+<h2 id="login_titile" >login</h2>
+<form method="post">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button class="btn btn-primary">login</button>
+    <p>Dont have account? <a href="{% url 'register' %}">register here</a></p>
+</form>
+{% endblock %}

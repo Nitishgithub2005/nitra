@@ -1,0 +1,41 @@
+body{
+    background: #1d0b52;
+}
+h2{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+h1{
+    color: #fff;
+}
+#nav-bar {
+    height: 78px;
+    padding: 0 6rem;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3565cc;
+    color: white;
+    margin: 20px auto;
+    border-radius: 50px;
+    font-family: "Montserrat";
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+
+
+#nav-bar a {
+    text-decoration: none;
+    color: white;
+}
+
+#nav-bar a:hover {
+    color: black;
+    border: 1px solid #538bd0;
+    padding: 15px;
+    border-radius: 25px;
+    background-color: #4b66de;
+}
+

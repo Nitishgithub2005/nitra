@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block title %}NiTra aur tweet{% endblock %}
+{% block content %}
+<h2>Are u sure ,do u really want to delete this tweet??</h2>
+<form method="post">
+    {% csrf_token %}
+    <button class="btn btn-warning">Delete</button>
+    <a class="btn btn-primary" href="{% url 'tweet_list' %}">Cancel</a>
+</form>
+{% endblock %}
